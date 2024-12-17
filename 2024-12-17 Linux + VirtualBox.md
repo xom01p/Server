@@ -40,7 +40,7 @@ Linux terminal 명령어 <22.04,24.04 공통>
 
 ip a 확인 후 
 >ping 192.168.100.5 -c 3
-=>inet : 192.168.100.4 에서
+=>inet : 192.168.100.4 에서 <br>
 >ping 192.168.100.4 -c 3
 =>inet : 192.168.100.5 에서
 
@@ -54,10 +54,21 @@ ip a 확인 후
 Session -> ssh 선택후
 ![image](https://github.com/user-attachments/assets/db83a113-0af5-47c9-9157-4a7dbe028bae) <br>
 host : 127.0.0.1
-각각 Port 설정
- 22 -> 6222
+각각 Port 설정 <br>
+ 22 -> 6222 <br>
  24 -> 6422
 
 ![image](https://github.com/user-attachments/assets/3445f62f-75e4-483d-91bb-14ce2a625651) <br>
-login as : osboxes
+login as : osboxes <br>
 osboxes@127.0.0.1's password: <22.04 , 24.04 설정한 passwd>
+
+### 지정포트 설정
+>su - root <br>
+>cd /etc/netplan <br>
+>ls <br>
+>nano  <br>
+![image](https://github.com/user-attachments/assets/f9f04d61-a40d-4f16-94cd-e4a9a84e7267)<br>
+>addresses: <br>
+>  - 192.168.100.150/24 or - 192.168.100.151/24 6422,6222 포트에 각각 설정 
+
+
