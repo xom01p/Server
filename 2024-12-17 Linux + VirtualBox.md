@@ -17,7 +17,7 @@ workspace 하위 폴더 생성
 - VirtualBox (VirtualBox 7.0.0 version 다운장소)
 
 ---
-## VirtualBox 실습과정
+## VirtualBox 설정
 Home에서 가져오기를 선택후 Ubuntu 22.04 , 24.04를 설정 
 ![image](https://github.com/user-attachments/assets/403ebe9f-1643-4691-858f-01cdd526a96f) <br>
 머신 기본폴더를 workspace에 만든 VMs 라는곳에 할당
@@ -28,7 +28,7 @@ NAT NetWorks 만들기 IPv4Prefix : 192.168.100.0/24 적용
 
 가져온 Ubunt 가상환경의 설정에서 네트워크의 어뎁터1 NatNetwork로 변경
 
-## Ubunt 실습과정
+## Ubunt 설정
 osboxes 기본 암호 osboxes.org
 
 로그인 완료후 
@@ -46,7 +46,7 @@ ip a 확인 후
 
 >sudo apt install openssh-server
 
-## VirtualBox 실습과정 2
+## VirtualBox 설정 2
 도구 -> 네트워크 -> NAT Networks ->포트 포워딩 설정
 ![image](https://github.com/user-attachments/assets/dfb05a31-4474-41fa-a2ed-553db7567a83)
 
@@ -69,6 +69,12 @@ osboxes@127.0.0.1's password: <22.04 , 24.04 설정한 passwd>
 >nano  <br>
 ![image](https://github.com/user-attachments/assets/f9f04d61-a40d-4f16-94cd-e4a9a84e7267)<br>
 >addresses: <br>
->  - 192.168.100.150/24 or - 192.168.100.151/24 6422,6222 포트에 각각 설정 
+>   192.168.100.150/24 or 192.168.100.151/24 6422,6222 포트에 각각 설정 <br>
+>sudo netplan apply  <br>
+>ip a <br>
+inet 192.168.100.151 , 192.168.100.150 로 바뀐걸 확인
 
+## VirtualBox 설정 3
+도구 -> 네트워크 -> NAT Networks ->포트 포워딩 설정 <br>
+게스트IP 각각 151 , 150 변경
 
