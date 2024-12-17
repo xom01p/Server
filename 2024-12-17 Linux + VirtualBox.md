@@ -19,7 +19,7 @@ workspace 하위 폴더 생성
 ---
 ## VirtualBox 실습과정
 Home에서 가져오기를 선택후 Ubuntu 22.04 , 24.04를 설정 
-![image](https://github.com/user-attachments/assets/403ebe9f-1643-4691-858f-01cdd526a96f)
+![image](https://github.com/user-attachments/assets/403ebe9f-1643-4691-858f-01cdd526a96f) <br>
 머신 기본폴더를 workspace에 만든 VMs 라는곳에 할당
 MAC 주소 정책 : 모든 네트워크 어뎁터의 새 MAC 주소 생성으로 변경
 
@@ -34,26 +34,30 @@ osboxes 기본 암호 osboxes.org
 로그인 완료후 
 
 Linux terminal 명령어 <22.04,24.04 공통>
->passwd )패스워드 변경 명령 <br>
->sudo passwd root )root 패스워드 변경 명령 <br>
->ip a )네트워크 상태 확인
+>passwd #패스워드 변경 명령 <br>
+>sudo passwd root #root 패스워드 변경 명령 <br>
+>ip a #네트워크 상태 확인
 
 ip a 확인 후 
-ping 192.168.100.5 -c 3
+>ping 192.168.100.5 -c 3
 =>inet : 192.168.100.4 에서
-ping 192.168.100.4 -c 3
+>ping 192.168.100.4 -c 3
 =>inet : 192.168.100.5 에서
 
 >sudo apt install openssh-server
 
+## VirtualBox 실습과정 2
+도구 -> 네트워크 -> NAT Networks ->포트 포워딩 설정
+![image](https://github.com/user-attachments/assets/dfb05a31-4474-41fa-a2ed-553db7567a83)
+
 ## MobaXterm 설정
 Session -> ssh 선택후
-![image](https://github.com/user-attachments/assets/db83a113-0af5-47c9-9157-4a7dbe028bae)
+![image](https://github.com/user-attachments/assets/db83a113-0af5-47c9-9157-4a7dbe028bae) <br>
 host : 127.0.0.1
 각각 Port 설정
  22 -> 6222
  24 -> 6422
 
-![image](https://github.com/user-attachments/assets/3445f62f-75e4-483d-91bb-14ce2a625651)
+![image](https://github.com/user-attachments/assets/3445f62f-75e4-483d-91bb-14ce2a625651) <br>
 login as : osboxes
 osboxes@127.0.0.1's password: <22.04 , 24.04 설정한 passwd>
