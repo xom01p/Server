@@ -57,4 +57,9 @@
 ## VPC
 - 가상 네트워크망(VPN, Virtual Private Network) 구축 지원 서비스
 - 서비스 보안 수준을 결정하거나 EC2나 RDS와 같은 AWS 서비스들을 적합한 권한이 있는 사용자들만 접속할 수 있게 한다
-- 
+
+## Route53
+- DNS(Domain Name System) 서비스
+- 도메인을 AWS 리소스와 연결 할때 사용 
+- DNS 서비스는 주소창에 컴퓨터 IP 주소를 입력할 필요가 없어 도메인 주소로 접속할 수 있도록 해주는 서비스
+
