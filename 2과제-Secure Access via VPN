@@ -1,4 +1,3 @@
-아래는 GitHub에 업로드할 수 있는 `.md` 형식으로 작성된 보고서입니다. 이전에 작성된 서버 설정 및 EC2 자동화 가이드에 "Secure Access via VPN" 내용을 통합하여, AWS 환경에서 서버 설정, EC2 자동화, 그리고 VPN을 통한 안전한 접근을 모두 포함하는 종합적인 가이드를 제공합니다. 각 단계는 Markdown 형식으로 구조화되어 있으며, 아이콘과 자세한 설명은 주석으로 추가하여 가독성을 높였습니다.
 
 ---
 
@@ -315,5 +314,3 @@ ssh -i key.pem ubuntu@10.0.2.5
 - [Open VPN AWS 설정 단계별 가이드](https://medium.com/@sanoj.sudo/how-to-set-up-a-vpn-on-aws-a8c1128ab3e1)
 
 ---
-
-이 `.md` 파일을 GitHub에 업로드하면 Markdown 형식으로 깔끔하게 렌더링됩니다. 추가 수정이 필요하면 알려주세요!
